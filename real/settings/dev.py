@@ -25,7 +25,7 @@ SECRET_KEY = 'ro@2i^6v+6xm_@9)#^9dt*k%!!7bm%$o^9xvk$i&p+%1jj8_1q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['itmaad.com']
 
 
 # Application definition
