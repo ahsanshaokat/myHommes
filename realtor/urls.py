@@ -17,6 +17,7 @@ from .views import (
 
         
         )
+app_name = 'reator'
 
 urlpatterns = [ 
     url(r'^$', RealtorView.as_view(), name='home'),
