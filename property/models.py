@@ -343,7 +343,7 @@ pre_save.connect(property_pre_save_receiver, sender=Property)
 
 
 class PropertyRating(models.Model):
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     property = models.ForeignKey(Property)
     rating = models.IntegerField(null=True, blank=True)
     verified = models.BooleanField(default=False)
