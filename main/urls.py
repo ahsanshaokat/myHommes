@@ -1,13 +1,12 @@
 from django.conf.urls import url
 from django.urls import reverse_lazy
 from .import views
-from django.contrib.auth.views import LoginView,logout
+from django.contrib.auth.views import LoginView,LogoutView
 # from main.views import IndexView, LoginView
 from main.views import MainView, LoginView
 
 from django.contrib.auth.views import(
     LoginView,
-    logout,
     password_reset,
     password_reset_done,
     password_reset_confirm,
