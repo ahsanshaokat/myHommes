@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from django.core.urlresolvers import reverse_lazy
+from django.urls import reverse_lazy
 from .import views
 from django.contrib.auth.views import login,logout
 # from main.views import IndexView, LoginView

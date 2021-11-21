@@ -12,7 +12,7 @@ from django.db.models import Count
 from tag.models import Tag
 from analytics.models import TagView
 from django.views.generic import View
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.db.models import Q
 from django.http import Http404, HttpResponse, JsonResponse
 from django.shortcuts import render, get_object_or_404
