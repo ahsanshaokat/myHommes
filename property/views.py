@@ -224,7 +224,7 @@ class PropertyDetailSlugView(DetailView):
         slug = self.kwargs.get('slug')
         obj = self.get_object()
         tags = obj.tag_set.all()
-        if self.request.user.is_authenticated():
+        if self.request.user.is_authenticated() == True:
             for tag in tags:
                 new_view = TagView.objects.add_count(self.request.user, tag)
        
