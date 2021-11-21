@@ -23,9 +23,10 @@ urlpatterns = [
     url(r'^',  include('main.urls',namespace='main')),
     url(r'^property/', include('property.urls',namespace='property')),
     url(r'^search/', include('search.urls', namespace='search')),
-    url(r'^tag/', include(("tag.urls"), namespace='tag')),
-    url(r'^realtor/', include("realtor.urls", namespace='realtor')),
 ]
+
+#url(r'^tag/', include(("tag.urls"), namespace='tag')),
+# url(r'^realtor/', include("realtor.urls", namespace='realtor')),
 
 if settings.DEBUG:
     urlpatterns = urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
