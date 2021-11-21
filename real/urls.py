@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^',  include('main.urls',namespace='main')),
     url(r'^property/', include('property.urls',namespace='property')),
     url(r'^search/', include('search.urls', namespace='search')),
-    url(r'^realtor/', include("realtor.urls", namespace='realtor')),
+    
 ]
 
 if settings.DEBUG:
