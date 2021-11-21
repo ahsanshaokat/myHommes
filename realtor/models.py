@@ -14,8 +14,8 @@ from django.urls import reverse
 
 
 class Realtor(models.Model):
-    user = models.OneToOneField(User, on_delete=models.PROTECT)
-    city = models.ForeignKey('property.City', default=1, on_delete=models.PROTECT)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    city = models.ForeignKey('property.City', default=1, on_delete=models.CASCADE)
     managers = models.ManyToManyField(User, related_name="manager_realtor", blank=True)
     active = models.BooleanField(default=False)
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)

@@ -326,7 +326,7 @@ class Images(models.Model):
 
 
 class MyProperty(models.Model):
-    user = models.OneToOneField(User)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     property = models.ManyToManyField(Property, blank=True)
 
     def __str__(self):
