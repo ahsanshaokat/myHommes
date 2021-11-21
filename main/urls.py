@@ -7,13 +7,7 @@ from main.views import MainView, LoginView
 
 from django.contrib.auth.views import(
     LoginView,
-    password_reset,
-    password_reset_done,
-    password_reset_confirm,
-    password_reset_complete,
     LogoutView,
-
-    
 )
 
 from property.views import UserFavoriteProperty
